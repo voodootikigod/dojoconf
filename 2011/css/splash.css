@@ -1,0 +1,79 @@
+body {
+	color:#fff;
+	background:#000;
+}
+
+.splash {
+	width:760px;
+	margin:0 auto;
+	position:relative;
+}
+
+.splash a:link,
+.splash a:visited {
+	color:#d7f4ff;
+	text-decoration:none;
+}
+
+.splash a:hover {
+	color:#c4efff;
+}
+
+.splash h2,
+.splash h3,
+.splash h4,
+.splash .call {
+	font-family:"CodeLight";
+	text-align:justify;
+	margin:0;
+	padding:0;
+}
+
+.splash h2 {
+	font-family:"CodeBold";
+	font-size:95px;
+	color:#f4db33;
+	padding-top:15px;
+	border-top:1px solid #333;
+}
+
+.splash h3 {
+	font-size:64px;
+}
+
+.splash h4 {
+	font-size:49px;
+}
+
+.splash .call {
+	font-family:"CodeBold";
+	font-size:50px;
+}
+
+#surfaceElement {
+	width:760px;
+	height:200px;
+}
+
+#triggerD, #triggerC {
+	position:absolute;
+	top:0;
+	left:15px;
+	width:100px;
+	height:160px;
+	cursor:crosshair;
+}
+
+#triggerC {
+	left:400px;
+	width:80px;
+	cursor:wait;
+}
+
+#script {
+	font-family:"Courier", sans-serif;
+	font-size:12px;
+	width:760px;
+	overflow:hidden;
+	display:none;
+}
