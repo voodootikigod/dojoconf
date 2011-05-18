@@ -27,9 +27,10 @@ dojo.ready(function(){
 			m11162011(evt.target);
 		});
 	});
-	
-	pulseD = pulsate(letterD, "#fff", "#f4db33").play();
-	pulseC = pulsate(letterC, "#fff", "#f4db33").play();
+	setTimeout(function () {
+  	pulseD = pulsate(letterD, "#fff", "#f4db33").play();
+  	pulseC = pulsate(letterC, "#fff", "#f4db33").play();
+	}, 5000);
 });
 
 
@@ -55,7 +56,8 @@ function m11162011(node) {
 
 function dc2451() {
 	pulseD.stop();
-	console.warn("Nothing is an accident");
+	if(console && console.warn)  // for our IE comrades
+  	console.warn("Nothing is an accident");
 	dojo.style("script", "display", "block");
 	dojo.style("triggerC", "cursor", "crosshair");
 	letterD.setFill("#f4db33");	
