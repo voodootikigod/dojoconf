@@ -27,10 +27,18 @@ dojo.ready(function(){
 			m11162011(evt.target);
 		});
 	});
+	var cfp = dojo.byId("cfp");
+	dojo.connect(cfp,'onmouseover', function () {
+	  dojo.byId("ring").play();
+	});
+	dojo.connect(cfp, 'onmouseleave', function () {
+	  dojo.byId("ring").pause();
+	});
+	
 	setTimeout(function () {
   	pulseD = pulsate(letterD, "#fff", "#f4db33").play();
   	pulseC = pulsate(letterC, "#fff", "#f4db33").play();
-	}, 5000);
+	}, 2000);
 });
 
 
