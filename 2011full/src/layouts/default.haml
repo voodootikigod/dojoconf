@@ -1,0 +1,52 @@
+<!doctype html>
+%html.no-js{:lang => "en"}
+  %head
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %title &#9733; DojoConf 2011 &#9733; September 16 & 17, 2011 &#9733; Washington DC &#9733; 
+    %meta{:content => "DojoConf 2011 - Unbeatable conference for the unbeatable JavaScript toolkit! A 2 day deep technical conference in Washington DC focused around the Dojo Toolkit.", :name => "description"}/
+    %meta{:content => "#JSConf", :name => "author"}/
+    %link{:href => "/stylesheets/font.css", :rel => "stylesheet"}/
+    %link{:href => "/stylesheets/screen.css", :rel => "stylesheet"}/
+    %link{:href => "http://dojotoolkit.org/images/favicon.png", :rel => "shortcut icon"}/
+    %link{:href => "http://dojotoolkit.org/images/apple.png", :rel => "apple-touch-icon"}/
+    %meta{:content => "dojoconf, dojo toolkit, dojo, JavaScript, js, Washington DC JS, jsconf, js conference, javascript conference", :name => "keywords"}/
+    /[if lt IE 9]
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  %body
+    #container
+      %header
+        %h1 
+          %span DojoConf
+        %h2 September 16<sup>th</sup> and 17<sup>th</sup>, 2011
+        %h3
+          %a{:href => "https://gc.synxis.com/rez.aspx?Hotel=26723&Chain=10179&arrive=9/15/2011&depart=9/18/2011&adult=1&child=0&group=11540401133"} Washington, DC
+        %a#enroll{:href => "http://dojoconf2011.eventbrite.com"}
+          %span Click Here To Enroll with DojoConf!
+        %navigation
+          %ul
+            %li{:class=>(@tab == :home ? "active" : nil)}
+              %a{:href => "/"} Home
+            %li{:class=>(@tab == :venue ? "active" : nil)}
+              %a{:href => "/venue.html"} Venue
+            %li{:class=>(@tab == :speakers ? "active" : nil)}
+              %a{:href => "/speakers.html"} Speakers
+            %li{:class=>(@tab == :sponsors ? "active" : nil)}
+              %a{:href => "/sponsors.html"} Sponsors
+            %li{:class=>(@tab == :about ? "active" : nil)}
+              %a{:href => "/about.html"} About
+      %hr
+      #content
+        = yield
+      %footer
+        \&copy;
+        %a{:href => "http://www.iterativedesigns.com"} Iterative Designs
+        2011
+        
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/dojo/1.6.0/dojo/dojo.xd.js"}
+    %script{:src => "javascripts/app.js"}
+    :javascript
+      var _gaq=[['_setAccount','UA-1264213-23'],['_trackPageview']]; 
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src='http://www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
