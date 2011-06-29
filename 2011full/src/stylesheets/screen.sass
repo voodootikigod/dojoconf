@@ -35,16 +35,19 @@ navigation
     color: #fbfbf7
     &:hover
       color: red
-  a.active
-    color:  #fffc00
+  li.active
+    a, a:hover
+      color:  #fffc00
     
 #content
-  background: url(/images/contentbg.jpg) top center no-repeat
+  background: url(/images/purecontentbg.jpg) top center no-repeat
   height: 1417px
   width: 928px
   padding:  100px 55px 35px 75px
   margin: 0px auto
  
+#content.index
+  background: url(/images/contentbg.jpg) top center no-repeat
  
 footer
   font-size: 14px
@@ -77,3 +80,24 @@ hr
   margin: 0px
 header
   background: #575757 url(/images/headerbg.png) top left repeat
+  
+  
+.person img 
+  float: left
+
+.person h4, .person p 
+  margin-left: 175px
+
+
+
+#left
+  float: left
+  width: 610px
+#right
+  margin-left: 645px
+  width: 290px
+  padding-top: 100px
+  
+#sponsorinterest
+  text-align:  center
+  margin-top:  20px

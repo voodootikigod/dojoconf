@@ -27,6 +27,9 @@
           %ul
             %li{:class=>(@tab == :home ? "active" : nil)}
               %a{:href => "/"} Home
+            
+            %li
+              %a{:href => "http://dojoconf2011.eventbrite.com"} Register
             %li{:class=>(@tab == :venue ? "active" : nil)}
               %a{:href => "/venue.html"} Venue
             %li{:class=>(@tab == :speakers ? "active" : nil)}
@@ -36,7 +39,7 @@
             %li{:class=>(@tab == :about ? "active" : nil)}
               %a{:href => "/about.html"} About
       %hr
-      #content
+      #content{:class=>(@make_index ? "index" : "")}
         = yield
       %footer
         \&copy;

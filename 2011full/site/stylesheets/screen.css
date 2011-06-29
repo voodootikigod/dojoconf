@@ -7,7 +7,12 @@ body {
   font-size: 10pt;
 }
 
-/* line 10 */
+/* line 9 */
+h1 {
+  font-family: "Impact Label Rev", courier, sans-serif;
+}
+
+/* line 11 */
 navigation {
   font-family: "Impact Label Rev", courier, sans-serif;
   height: 38px;
@@ -16,14 +21,14 @@ navigation {
   display: block;
   text-align: center;
 }
-/* line 17 */
+/* line 18 */
 navigation ul, navigation li {
   list-style: none;
   display: inline-block;
   padding: 0px;
   margin: 0px;
 }
-/* line 22 */
+/* line 23 */
 navigation a, navigation a:link, navigation a:visited {
   display: inline-block;
   height: 38px;
@@ -31,50 +36,55 @@ navigation a, navigation a:link, navigation a:visited {
   text-decoration: none;
   padding: 0px;
   padding-right: 15px;
-  -webkit-transition-duration: color 0.5s ease-in;
+  -webkit-transition: color 0.5s ease-in;
   -moz-transition: color 0.5s ease-in;
   -o-transition: color 0.5s ease-in;
   transition: color 0.5s ease-in;
   font-size: 26px;
   color: #fbfbf7;
 }
-/* line 35 */
+/* line 36 */
 navigation a:hover, navigation a:link:hover, navigation a:visited:hover {
   color: red;
 }
-/* line 37 */
-navigation a.active {
+/* line 39 */
+navigation li.active a, navigation li.active a:hover {
   color: #fffc00;
 }
 
-/* line 40 */
+/* line 42 */
 #content {
-  background: url(/images/contentbg.jpg) top center no-repeat;
+  background: url(/images/purecontentbg.jpg) top center no-repeat;
   height: 1417px;
   width: 928px;
   padding: 100px 55px 35px 75px;
   margin: 0px auto;
 }
 
-/* line 48 */
+/* line 49 */
+#content.index {
+  background: url(/images/contentbg.jpg) top center no-repeat;
+}
+
+/* line 52 */
 footer {
   font-size: 14px;
   font-family: Courier, sans-serif;
   text-align: center;
   margin: 20px auto;
 }
-/* line 53 */
+/* line 57 */
 footer a {
   text-decoration: none;
   color: black;
 }
 
-/* line 58 */
+/* line 62 */
 header h2, header h3, header #enroll {
   display: none;
 }
 
-/* line 60 */
+/* line 64 */
 header h1 {
   margin: 0px;
   padding: 0px;
@@ -82,12 +92,12 @@ header h1 {
   height: 121px;
   background: url(/images/logo.png) top center no-repeat;
 }
-/* line 66 */
+/* line 70 */
 header h1 span {
   display: none;
 }
 
-/* line 69 */
+/* line 73 */
 hr {
   display: block;
   background: url(/images/rip.png) top left repeat-x;
@@ -98,7 +108,36 @@ hr {
   margin: 0px;
 }
 
-/* line 77 */
+/* line 81 */
 header {
   background: #575757 url(/images/headerbg.png) top left repeat;
+}
+
+/* line 85 */
+.person img {
+  float: left;
+}
+
+/* line 88 */
+.person h4, .person p {
+  margin-left: 175px;
+}
+
+/* line 93 */
+#left {
+  float: left;
+  width: 610px;
+}
+
+/* line 96 */
+#right {
+  margin-left: 645px;
+  width: 290px;
+  padding-top: 100px;
+}
+
+/* line 101 */
+#sponsorinterest {
+  text-align: center;
+  margin-top: 20px;
 }

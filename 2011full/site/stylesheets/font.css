@@ -1,1 +1,12 @@
 /* @font-face kit by Fonts2u (http://www.fonts2u.com) */ @font-face {font-family:"Impact Label Rev";src:url("Impact_Label_Reversed.eot?") format("eot"),url("Impact_Label_Reversed.woff") format("woff"),url("Impact_Label_Reversed.ttf") format("truetype"),url("Impact_Label_Reversed.svg#ImpactLabelRev") format("svg");font-weight:normal;font-style:normal;}
+/* new clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
