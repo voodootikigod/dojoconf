@@ -11,8 +11,40 @@
 
 
 
+.person.clearfix#hann
+%img{:alt => "John Hann", :height => "150", :src => "images/hann.jpg", :width => "150"}/
+%h4
+  %a{:href=>"http://twitter.com/#!/unscriptable"}
+    John Hann
+  = " - AMD module patterns"
+%p
+  Much of the hype about AMD modules centers around performance and code size (and it's well-deserved).  But modules are as important to software architecture as dojo.declare()!
+%p
+  In this session, we'll take a look at some classic, general-purpose patterns re-spun as AMD modules as well as a few advanced, implementation-specific patterns.
+%p
+  Specifically, we'll cover:
+%ul
+  %li Singletons, Decorators, Adapters
+  %li Inversion of Control / Dependency Injection
+  %li Mediators and inter-module coordination
+  %li Model-View-Controller patterns
+  %li Self-contained Widgets (js, css, and html)
+  %li Strategies for sharing code on the server
 
-.person.clearfix
+  
+  
+  
+.person.clearfix#corrandini
+%img{:alt => "Ryan Corradini", :height => "150", :src => "images/corradini.jpg", :width => "150"}/
+%h4
+  %a{:href=>"http://twitter.com/#!/buyog"}
+    Ryan Corradini
+  = " - DataGrid Bootcamp: Extreme Performance Hacks for Big Data"
+%p
+  We love the <a href="http://dojotoolkit.org/reference-guide/dojox/grid/DataGrid.html">Dojox DataGrid</a>. It has built-in pagination, dynamic data binding, flexible resizing, and all kinds of <em>sexy</em> customization options. However, when you operate in the world of <a href="http://en.wikipedia.org/wiki/Big_data">Big Data</a>, it can fall short of its promise, ballooning your memory footprint, crushing your JavaScript engine, and otherwise causing your users to <strong>curse your name</strong>.</p>
+
+
+.person.clearfix#lee
   %img{:alt => "Daniel Lee", :height => "150", :src => "images/lee.jpg", :width => "150"}/
   %h4
     %a{:href=>"http://twitter.com/#!/DanielEricLee"}
@@ -22,7 +54,7 @@
     You're probably using Widgets, but are you <b>really</b> using Widgets? Do you know about Attribute Maps? Are your widgets leaking memory? Are you sure? Join <a href="http://enterprisedojo.com">enterprisedojo.com</a> Editor and all-around good guy Dan Lee as he leads a discussion on the finer points of custom Dojo widgets, some best practices on the subject, and important anti-patters to avoid. A nerdy good time will be had by all.
 
 
-.person.clearfix
+.person.clearfix#gibson
   %img{:alt => "Becky Gibson", :height => "150", :src => "images/gibson.jpg", :width => "150"}/
   %h4
     %a{:href=>"http://twitter.com/#!/becka11y"}
@@ -33,7 +65,7 @@
 
 
 
-.person.clearfix
+.person.clearfix#montes
   %img{:alt => "Luis Montes", :height => "150", :src => "images/montes.jpg", :width => "150"}/
   %h4
     %a{:href=>"http://twitter.com/#!/monteslu"}
@@ -45,7 +77,7 @@
 
 
 
-.person.clearfix
+.person.clearfix#wilcox
   %img{:alt => "Mike Wilcox", :height => "150", :src => "images/wilcox.jpg", :width => "150"}/
   %h4
     %a{:href=>"http://twitter.com/#!/clubajax"}
@@ -56,7 +88,7 @@
 
 
 
-.person.clearfix
+.person.clearfix#thomas
   %img{:alt => "James Thomas", :height => "150", :src => "images/thomas.jpg", :width => "150"}/
   %h4
     %a{:href=>"http://twitter.com/#!/thomasj"}
@@ -81,7 +113,7 @@
 
 
 
-.person.clearfix
+.person.clearfix#ruzand
   %img{:alt => "Patrick Ruzand", :height => "150", :src => "images/ruzand.jpg", :width => "150"}/
   %h4
     %a{:href=>"http://twitter.com/#!/mobicellar"}
@@ -95,45 +127,13 @@
     Patrick Ruzand is a Software Engineer at IBM and a contributor to the Dojo Open source project, in particular for the 2D graphic API (dojox.gfx). He has 12 years of experience in advanced visualization components architecture and development targeting the Java and .NET desktop plateforms, and the Dojo/HTML5 and Microsoft Silverlight rich internet applications (RIA) plateforms. 
 
   
-.person.clearfix
-  %img{:alt => "John Hann", :height => "150", :src => "images/hann.jpg", :width => "150"}/
-  %h4
-    %a{:href=>"http://twitter.com/#!/unscriptable"}
-      John Hann
-    = " - AMD module patterns"
-  %p
-    Much of the hype about AMD modules centers around performance and code size (and it's well-deserved).  But modules are as important to software architecture as dojo.declare()!
-  %p
-    In this session, we'll take a look at some classic, general-purpose patterns re-spun as AMD modules as well as a few advanced, implementation-specific patterns.
-  %p
-    Specifically, we'll cover:
-  %ul
-    %li Singletons, Decorators, Adapters
-    %li Inversion of Control / Dependency Injection
-    %li Mediators and inter-module coordination
-    %li Model-View-Controller patterns
-    %li Self-contained Widgets (js, css, and html)
-    %li Strategies for sharing code on the server
-
-    
-    
-    
-.person.clearfix
-  %img{:alt => "Ryan Corradini", :height => "150", :src => "images/corradini.jpg", :width => "150"}/
-  %h4
-    %a{:href=>"http://twitter.com/#!/buyog"}
-      Ryan Corradini
-    = " - DataGrid Bootcamp: Extreme Performance Hacks for Big Data"
-  %p
-    We love the <a href="http://dojotoolkit.org/reference-guide/dojox/grid/DataGrid.html">Dojox DataGrid</a>. It has built-in pagination, dynamic data binding, flexible resizing, and all kinds of <em>sexy</em> customization options. However, when you operate in the world of <a href="http://en.wikipedia.org/wiki/Big_data">Big Data</a>, it can fall short of its promise, ballooning your memory footprint, crushing your JavaScript engine, and otherwise causing your users to <strong>curse your name</strong>.</p>
     
     
     
     
     
     
-    
-.person.clearfix
+.person.clearfix#barber
   %img{:alt => "Chris Barber", :height => "150", :src => "images/barber.jpg", :width => "150"}/
   %h4
     %a{:href=>"http://twitter.com/#!/cb1kenobi"}
@@ -152,7 +152,7 @@
 
 
 
-.person.clearfix
+.person.clearfix#guillen
   %img{:alt => "Revin Guillen", :height => "150", :src => "images/guillen.jpg", :width => "150"}/
   %h4
     %a{:href=>"http://twitter.com/#!/revin"}
@@ -166,7 +166,7 @@
 
 
 
-.person.clearfix
+.person.clearfix#gill
   %img{:alt => "Rawld Gill", :height => "150", :src => "images/gill.jpg", :width => "150"}/
   %h4
     %a{:href=>"http://twitter.com/#!/Rawld"}
@@ -207,7 +207,7 @@
 
 
 
-.person.clearfix
+.person.clearfix#hasson
   %img{:alt => "Laurent Hasson", :height => "150", :src => "images/hasson.jpg", :width => "150"}/
   %h4
     %a{:href=>"http://twitter.com/#!/ldhasson"}
@@ -216,7 +216,7 @@
   %p
     This session will provide you with an in-depth account of building a mobile web game for the  BlackBerry PlayBook using the WebKit web  browser and the BlackBerry Webworks platform. I will recount the lessons learnt while developing such an app, why mobile is truly different and how you can adapt your desktop Dojo skills for the job at hand. I will lay down a few best practices that are emerging, and then cap it all with a description of how you can submit your own app on BlackBerry AppWorld.
     
-.person.clearfix
+.person.clearfix#russell
   %img{:alt => "Alex Russell", :height => "150", :src => "images/russell.jpg", :width => "150"}/
   %h4
     %a{:href=>"http://infrequently.org/"}
@@ -227,7 +227,7 @@
   %p
     This talk explores how language, platform, and market evolution will change the dynamic further and faster, allowing the Dojo community to consider new approaches...if we can muster the will to get out in front of it.
 
-.person.clearfix
+.person.clearfix#schiemann
   %img{:alt => "Dylan Schiemann", :height => "150", :src => "images/schiemann.jpg", :width => "150"}/
   %h4
     %a{:href=>"http://dylanschiemann.com/"}

@@ -59,7 +59,43 @@
               <p style='margin-bottom: 2em;'>There will be a total of 20 amazing speakers that will be presenting at DojoConf 2011, we are posting them as soon as we have final confirmation over the next week, so be sure to check back. For now here are the agents that have been brought online for active duty.</p>
               <h4 style='margin-bottom:0px; '>We Want To Hear From You</h4>
               <p style='margin-bottom: 2em; margin-top: 0px'>If you want to present at DojoConf on a topic, product, or idea that you have, there will be a Track B for lightning talks and hackfests. Speaking in Track B is completely free form, but you must be a registered attendee. Sign up will be done at the conference, so start preparing your topic to present today and get ready.</p>
-              <div class='person clearfix'>
+              <div class='person clearfix' id='hann'></div>
+              <img alt='John Hann' height='150' src='images/hann.jpg' width='150' />
+              <h4>
+                <a href='http://twitter.com/#!/unscriptable'>
+                  John Hann
+                </a>
+                 - AMD module patterns
+              </h4>
+              <p>
+                Much of the hype about AMD modules centers around performance and code size (and it's well-deserved).  But modules are as important to software architecture as dojo.declare()!
+              </p>
+              <p>
+                In this session, we'll take a look at some classic, general-purpose patterns re-spun as AMD modules as well as a few advanced, implementation-specific patterns.
+              </p>
+              <p>
+                Specifically, we'll cover:
+              </p>
+              <ul>
+                <li>Singletons, Decorators, Adapters</li>
+                <li>Inversion of Control / Dependency Injection</li>
+                <li>Mediators and inter-module coordination</li>
+                <li>Model-View-Controller patterns</li>
+                <li>Self-contained Widgets (js, css, and html)</li>
+                <li>Strategies for sharing code on the server</li>
+              </ul>
+              <div class='person clearfix' id='corrandini'></div>
+              <img alt='Ryan Corradini' height='150' src='images/corradini.jpg' width='150' />
+              <h4>
+                <a href='http://twitter.com/#!/buyog'>
+                  Ryan Corradini
+                </a>
+                 - DataGrid Bootcamp: Extreme Performance Hacks for Big Data
+              </h4>
+              <p>
+                We love the <a href="http://dojotoolkit.org/reference-guide/dojox/grid/DataGrid.html">Dojox DataGrid</a>. It has built-in pagination, dynamic data binding, flexible resizing, and all kinds of <em>sexy</em> customization options. However, when you operate in the world of <a href="http://en.wikipedia.org/wiki/Big_data">Big Data</a>, it can fall short of its promise, ballooning your memory footprint, crushing your JavaScript engine, and otherwise causing your users to <strong>curse your name</strong>.</p>
+              </p>
+              <div class='person clearfix' id='lee'>
                 <img alt='Daniel Lee' height='150' src='images/lee.jpg' width='150' />
                 <h4>
                   <a href='http://twitter.com/#!/DanielEricLee'>
@@ -71,7 +107,7 @@
                   You're probably using Widgets, but are you <b>really</b> using Widgets? Do you know about Attribute Maps? Are your widgets leaking memory? Are you sure? Join <a href="http://enterprisedojo.com">enterprisedojo.com</a> Editor and all-around good guy Dan Lee as he leads a discussion on the finer points of custom Dojo widgets, some best practices on the subject, and important anti-patters to avoid. A nerdy good time will be had by all.
                 </p>
               </div>
-              <div class='person clearfix'>
+              <div class='person clearfix' id='gibson'>
                 <img alt='Becky Gibson' height='150' src='images/gibson.jpg' width='150' />
                 <h4>
                   <a href='http://twitter.com/#!/becka11y'>
@@ -83,7 +119,7 @@
                   Let's face it, not everyone has the same abilities.  Folks with vision or mobility impairments want to use Web applications, too!  The core widget set of Dojo is fully accessible to people who rely on the keyboard or assistive technologies like a screen reader to interact with the Web.  Your mission is to  learn how to make your Dojo apps accessible.  Your assigned agent will  decode the mysteries of ARIA  and will demo a fully accessible Dojo app!  Accept the challenge to make the Web inclusive for all!
                 </p>
               </div>
-              <div class='person clearfix'>
+              <div class='person clearfix' id='montes'>
                 <img alt='Luis Montes' height='150' src='images/montes.jpg' width='150' />
                 <h4>
                   <a href='http://twitter.com/#!/monteslu'>
@@ -95,7 +131,7 @@
                   HTML5 game development is the hawtness.  There might not be an official dojox.game package, but there are dojo libraries that can help. This will be a survey of the amazing utilities you can use to create HTML5 games.
                 </p>
               </div>
-              <div class='person clearfix'>
+              <div class='person clearfix' id='wilcox'>
                 <img alt='Mike Wilcox' height='150' src='images/wilcox.jpg' width='150' />
                 <h4>
                   <a href='http://twitter.com/#!/clubajax'>
@@ -107,7 +143,7 @@
                   HTML5 is all the rage these days and Dojo can help keep you from falling behind. HTML5 Audio? Check. Video? Naturally! Canvas? Of course! This presentation will show you how you can get the most of your HTML5 apps and not have to worry about that "other browser" because Dojo is there to make it all work.
                 </p>
               </div>
-              <div class='person clearfix'>
+              <div class='person clearfix' id='thomas'>
                 <img alt='James Thomas' height='150' src='images/thomas.jpg' width='150' />
                 <h4>
                   <a href='http://twitter.com/#!/thomasj'>
@@ -137,7 +173,7 @@
                   This talk will walk through using the tool's features, demonstrating common use cases and talking about the future plans to make it even simpler to generate Dojo builds.
                 </p>
               </div>
-              <div class='person clearfix'>
+              <div class='person clearfix' id='ruzand'>
                 <img alt='Patrick Ruzand' height='150' src='images/ruzand.jpg' width='150' />
                 <h4>
                   <a href='http://twitter.com/#!/mobicellar'>
@@ -154,45 +190,7 @@
                   Patrick Ruzand is a Software Engineer at IBM and a contributor to the Dojo Open source project, in particular for the 2D graphic API (dojox.gfx). He has 12 years of experience in advanced visualization components architecture and development targeting the Java and .NET desktop plateforms, and the Dojo/HTML5 and Microsoft Silverlight rich internet applications (RIA) plateforms.
                 </p>
               </div>
-              <div class='person clearfix'>
-                <img alt='John Hann' height='150' src='images/hann.jpg' width='150' />
-                <h4>
-                  <a href='http://twitter.com/#!/unscriptable'>
-                    John Hann
-                  </a>
-                   - AMD module patterns
-                </h4>
-                <p>
-                  Much of the hype about AMD modules centers around performance and code size (and it's well-deserved).  But modules are as important to software architecture as dojo.declare()!
-                </p>
-                <p>
-                  In this session, we'll take a look at some classic, general-purpose patterns re-spun as AMD modules as well as a few advanced, implementation-specific patterns.
-                </p>
-                <p>
-                  Specifically, we'll cover:
-                </p>
-                <ul>
-                  <li>Singletons, Decorators, Adapters</li>
-                  <li>Inversion of Control / Dependency Injection</li>
-                  <li>Mediators and inter-module coordination</li>
-                  <li>Model-View-Controller patterns</li>
-                  <li>Self-contained Widgets (js, css, and html)</li>
-                  <li>Strategies for sharing code on the server</li>
-                </ul>
-              </div>
-              <div class='person clearfix'>
-                <img alt='Ryan Corradini' height='150' src='images/corradini.jpg' width='150' />
-                <h4>
-                  <a href='http://twitter.com/#!/buyog'>
-                    Ryan Corradini
-                  </a>
-                   - DataGrid Bootcamp: Extreme Performance Hacks for Big Data
-                </h4>
-                <p>
-                  We love the <a href="http://dojotoolkit.org/reference-guide/dojox/grid/DataGrid.html">Dojox DataGrid</a>. It has built-in pagination, dynamic data binding, flexible resizing, and all kinds of <em>sexy</em> customization options. However, when you operate in the world of <a href="http://en.wikipedia.org/wiki/Big_data">Big Data</a>, it can fall short of its promise, ballooning your memory footprint, crushing your JavaScript engine, and otherwise causing your users to <strong>curse your name</strong>.</p>
-                </p>
-              </div>
-              <div class='person clearfix'>
+              <div class='person clearfix' id='barber'>
                 <img alt='Chris Barber' height='150' src='images/barber.jpg' width='150' />
                 <h4>
                   <a href='http://twitter.com/#!/cb1kenobi'>
@@ -207,7 +205,7 @@
                   This talk describes the basic principals for designing non-dijit widgets that are small and fast containing only the functionality you need.  We'll take dijit widgets such as the AccordionContainer, then hack it down to a fraction of the functionality and size.
                 </p>
               </div>
-              <div class='person clearfix'>
+              <div class='person clearfix' id='guillen'>
                 <img alt='Revin Guillen' height='150' src='images/guillen.jpg' width='150' />
                 <h4>
                   <a href='http://twitter.com/#!/revin'>
@@ -219,7 +217,7 @@
                   "Machiavellian" is usually pejorative, a term laced with disdain and subtle contempt. However, to actually read Machiavelli is to study applied Realism in the context of meeting goals. As a community, we (Dojo) have certain goals; how can we reach them effectively? How can we best position ourselves in the toolkit/library ecosystem in order to reach our goals? How can we survive in a world more and more infatuated with tiny individual libraries, when the perception is that Dojo is heavy? Machiavelli provides us with keen insights into human nature—insights that still serve us well nearly 500 years later.
                 </p>
               </div>
-              <div class='person clearfix'>
+              <div class='person clearfix' id='gill'>
                 <img alt='Rawld Gill' height='150' src='images/gill.jpg' width='150' />
                 <h4>
                   <a href='http://twitter.com/#!/Rawld'>
@@ -271,7 +269,7 @@
                   This leads to a new and interesting approach for writing Dojo widgets. They can become much more like controllers: handling DOM events, implementing application logic and updating a model.  In this talk I’d like to show what Eyebrow looks like under the covers, how it’s used to build our site and discuss how it changes web application development.
                 </p>
               </div>
-              <div class='person clearfix'>
+              <div class='person clearfix' id='hasson'>
                 <img alt='Laurent Hasson' height='150' src='images/hasson.jpg' width='150' />
                 <h4>
                   <a href='http://twitter.com/#!/ldhasson'>
@@ -283,7 +281,7 @@
                   This session will provide you with an in-depth account of building a mobile web game for the  BlackBerry PlayBook using the WebKit web  browser and the BlackBerry Webworks platform. I will recount the lessons learnt while developing such an app, why mobile is truly different and how you can adapt your desktop Dojo skills for the job at hand. I will lay down a few best practices that are emerging, and then cap it all with a description of how you can submit your own app on BlackBerry AppWorld.
                 </p>
               </div>
-              <div class='person clearfix'>
+              <div class='person clearfix' id='russell'>
                 <img alt='Alex Russell' height='150' src='images/russell.jpg' width='150' />
                 <h4>
                   <a href='http://infrequently.org/'>
@@ -298,7 +296,7 @@
                   This talk explores how language, platform, and market evolution will change the dynamic further and faster, allowing the Dojo community to consider new approaches...if we can muster the will to get out in front of it.
                 </p>
               </div>
-              <div class='person clearfix'>
+              <div class='person clearfix' id='schiemann'>
                 <img alt='Dylan Schiemann' height='150' src='images/schiemann.jpg' width='150' />
                 <h4>
                   <a href='http://dylanschiemann.com/'>
