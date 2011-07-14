@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Club AJAX | Simple and Easy JavaScript Inheritance</title>
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" href="http://clubajax.org/wp-content/themes/clubajax/style.css" type="text/css" media="screen" />
+<link rel="pingback" href="http://clubajax.org/xmlrpc.php" />
+<link rel="stylesheet" href="http://clubajax.org/wp-content/themes/clubajax/css/page.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://clubajax.org/wp-content/themes/clubajax/css/header.css" type="text/css" media="screen" />
+<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.4.1/dojo/dojo.xd.js"></script>
+<script src="http://clubajax.org/wp-content/themes/clubajax/js/init.js"></script>
+<script>
+	// this is a feaux script!
+	/*window.swfobject = {
+		embedSWF: function(){}
+	};
+	window.embed = function(){}*/
+</script>
+
+<link rel="alternate" type="application/rss+xml" title="Club AJAX – Dallas Ft. Worth Area AJAX Users Group covering: AJAX, JavaScript, HTML, CSS, and Design &raquo; Feed" href="http://clubajax.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Club AJAX – Dallas Ft. Worth Area AJAX Users Group covering: AJAX, JavaScript, HTML, CSS, and Design &raquo; Comments Feed" href="http://clubajax.org/comments/feed/" />
+<link rel='stylesheet' id='jobman-display-css'  href='http://clubajax.org/wp-content/plugins/job-manager/css/display.css?ver=0.7.17' type='text/css' media='all' />
+<link rel='stylesheet' id='sociable-front-css-css'  href='http://clubajax.org/wp-content/plugins/sociable/sociable.css?ver=3.1.3' type='text/css' media='all' />
+<script type='text/javascript' src='http://clubajax.org/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://clubajax.org/wp-includes/js/jquery/jquery.js?ver=1.4.4'></script>
+<script type='text/javascript' src='http://clubajax.org/wp-includes/js/jquery/ui.core.js?ver=1.8.9'></script>
+<script type='text/javascript' src='http://clubajax.org/wp-content/plugins/job-manager/js/jquery-ui-datepicker.js?ver=0.7.17'></script>
+<script type='text/javascript' src='http://clubajax.org/wp-content/plugins/job-manager/js/display.js?ver=0.7.17'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://clubajax.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://clubajax.org/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Club AJAX – Dallas Ft. Worth Area AJAX Users Group covering: AJAX, JavaScript, HTML, CSS, and Design' href='http://clubajax.org/' />
+<meta name="generator" content="WordPress 3.1.3" />
+<script src="http://clubajax.org/wp-content/plugins/ca_twitter/ca_twitter.js"></script>
+<link href="http://clubajax.org/wp-content/plugins/ca_twitter/ca_twitter.css" rel="stylesheet"/>
+   <link rel="stylesheet" href="http://clubajax.org/wp-content/plugins/tdo-mini-forms/tdomf-style-form.css" type="text/css" media="screen" />
+   </head>
+<body class="error404">
+<div id="bodyWrap">
+<div id="centerPage">
+<div id="page">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-8118735514050159";
+/* Club AJAX Header */
+google_ad_slot = "2222121869";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<style>
+.headerAd {
+	float:left;
+	width: 728px;
+	height: 90px;
+	padding-left: 20px;
+}
+</style>
+		<header>
+			<h1>Club Ajax - DFW Ajax Users Group</h1>
+			<div id="logoWrap">
+				<a title="Return to Club AJAX Home Page" href="http://clubajax.org/index.php">
+					<div id="logo"></div>
+				</a>
+<div class="headerAd">
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+			</div>
+			<h2>
+				Dallas Ft. Worth Area AJAX Users Group covering: AJAX, JavaScript, HTML, CSS, and Design.
+			</h2>
+			<menu>
+				<ul id="tabs">
+					<li><a title="Club AJAX Home" href="/index.php">Home</a></li>
+					<li><a title="DFW Club AJAX User Group Meetings" href="/meetings/">Meetings</a></li>
+					<li><a title="Hand-picked AJAX jobs of possible interest to our users" href="/jobs">Jobs</a></li>
+					<li><a title="Videos of the DFW Club AJAX User Group Meetings" href="/videos">Videos</a></li>
+					<li><a title="Presentations from the DFW Club AJAX User Group Meetings (and some from elsewhere)" href="/presentations/">Presentations</a></li> <!-- AJAX Examples -->
+					<li><a title="AJAX demos, examples and resources" href="/examples/">Examples</a></li>
+					<li><a title="More information about Club AJAX" href="/community">Community <span class="dropicon">&diams;</span></a> <!-- parent -->
+						<div class="subContainer" style="display:none;">
+							<ul id="communityMenu" class="submenu">
+								<li><a title="Join the Club AJAX Google Group and be notified of events" href="/community/join-club-ajax/">Join</a></li>
+								<li><a title="Calndar of local DFW events" href="/community/calendar/">Calendar</a></li>
+								<li><a title="Directions to the DFW Club AJAX User Group Meetings" href="/community/directions/">Directions</a></li>
+								<li><a title="Sponsors of the DFW Club AJAX User Group Meetings" href="/community/sponsors/">Sponsors</a></li>
+								<li><a title="More Information About Club AJAX." href="/about/">About</a></li>
+								<!--<li><a href="#">Links</a></li>-->
+								<li><a title="Email Mike Wilcox, Bob Byron and Club AJAX" href="/community/contact/">Contact Us</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<div class="menuFront"></div>
+			</menu>
+		</header>
+<div class="submitArticle">
+	<a href="/submit/">
+		<img src="/wp-content/themes/clubajax/img/SubmitArticleText.png"></img>
+	</a>
+</div>
+	<div id="content" class="narrowcolumn">
+
+		<h2 class="center">Error 404 - Not Found</h2>
+
+	</div>
+
+	<div id="sidebar" role="complementary">
+
+			
+
+		<div class="sidebarnav meeting">
+			<h3><label>Next Meeting:</label><a href="http://clubajax.org/meetings/webpage-design-basics-for-non-designers/">Webpage Design Basics for Non-Designers</a></h3>
+			<h6>July 5th, 2011 &mdash; by Mike Wilcox</h6>
+			<p>
+				Design is not a talent &mdash; it's a learned skill. This presentation will show you how to build a webpage from scratch, even if you're not "an artist".
+			</p>
+		</div><div class="sidebarnav">Accelebrate offers <a href="http://www.accelebrate.com/html_javascript_training/html_5_training.htm">HTML5 Training</a></div><div class="sidebarnav">Webucator provides instructor-led online <a href="http://www.webucator.com/classes/html5.cfm">HTML5 Training</a></div><script>google_ad_client = "ca-pub-8118735514050159";google_ad_slot = "1534009510";google_ad_width = 300;google_ad_height = 250;</script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script><a href="/community/directions/"><div class="sidebarnav directions"><img src="/wp-content/themes/clubajax/img/DirectionsText.png"></img></div></a><div class="sidebarnav chat"><h4>Club AJAX Chat:</h4>
+		<p><a href="http://webchat.freenode.net/?channels=clubajax">freenode.net on the web</a></p>
+		<p>For chat clients use: irc.freenode.net #clubajax</p></div><div id="twitterFeed" dojoType="twitter"><div class="tweetHead"><img src="http://clubajax.org/wp-content/themes/clubajax/img/twitter_logo.png" />
+			</div>
+			<div class="tweets"></div>
+			<div class="tweetFoot">
+				<div>Follow us at: <a href="http://twitter.com/clubajax" target="_blank">clubajax</a></div>
+			</div>
+		</div>		<div class="sidebarnav">
+				<ul>
+					<li>
+						<form role="search" method="get" id="searchform" action="http://clubajax.org/" >
+	<div><label class="screen-reader-text" for="s">Search for:</label>
+	<input type="text" value="" name="s" id="s" />
+	<input type="submit" id="searchsubmit" value="Search" />
+	</div>
+	</form>					</li>
+
+					<!-- Author information is disabled per default. Uncomment and fill in your details if you want to use it.
+					<li><h2>Author</h2>
+					<p>A little something about you, the author. Nothing lengthy, just an overview.</p>
+					</li>
+					-->
+
+					 <li>
+
+										
+
+					</li>
+								</ul>
+				<ul role="navigation">
+					<!-- <li class="pagenav"><h2>Pages</h2><ul><li class="page_item page-item-2"><a href="http://clubajax.org/about/" title="About">About</a></li>
+<li class="page_item page-item-61"><a href="http://clubajax.org/community/" title="Community">Community</a>
+<ul class='children'>
+	<li class="page_item page-item-65"><a href="http://clubajax.org/community/calendar/" title="Calendar">Calendar</a></li>
+	<li class="page_item page-item-76"><a href="http://clubajax.org/community/contact/" title="Contact">Contact</a></li>
+	<li class="page_item page-item-67"><a href="http://clubajax.org/community/directions/" title="Directions">Directions</a></li>
+	<li class="page_item page-item-63"><a href="http://clubajax.org/community/join-club-ajax/" title="Join Club AJAX">Join Club AJAX</a></li>
+	<li class="page_item page-item-71"><a href="http://clubajax.org/community/sponsors/" title="Sponsors">Sponsors</a></li>
+</ul>
+</li>
+<li class="page_item page-item-78"><a href="http://clubajax.org/examples/" title="Examples">Examples</a>
+<ul class='children'>
+	<li class="page_item page-item-1075"><a href="http://clubajax.org/examples/consolefix/" title="consoleFix">consoleFix</a></li>
+	<li class="page_item page-item-1023"><a href="http://clubajax.org/examples/plain-text-vs-textcontent-vs-innertext/" title="Plain Text vs textContent vs innerText">Plain Text vs textContent vs innerText</a></li>
+</ul>
+</li>
+<li class="page_item page-item-1221"><a href="http://clubajax.org/how-to-get-a-job-as-a-front-end-developer/" title="How to get a Job as a Front End Developer">How to get a Job as a Front End Developer</a></li>
+<li class="page_item page-item-22"><a href="http://clubajax.org/jobsold/" title="Jobs">Jobs</a></li>
+<li class="page_item page-item-1565"><a href="http://clubajax.org/jobs/" title="Jobs Listing">Jobs Listing</a></li>
+<li class="page_item page-item-34"><a href="http://clubajax.org/meetings/" title="Meetings">Meetings</a>
+<ul class='children'>
+	<li class="page_item page-item-1488"><a href="http://clubajax.org/meetings/database-query-with-a-drag-drop-ui/" title="Database Query with a drag-drop UI">Database Query with a drag-drop UI</a></li>
+	<li class="page_item page-item-1127"><a href="http://clubajax.org/meetings/demo-google-appengine-and-appenginejs/" title="Demo: Google AppEngine and AppEngineJS">Demo: Google AppEngine and AppEngineJS</a></li>
+	<li class="page_item page-item-1287"><a href="http://clubajax.org/meetings/how-to-build-ajax-apps/" title="How to build Ajax Apps">How to build Ajax Apps</a></li>
+	<li class="page_item page-item-1207"><a href="http://clubajax.org/meetings/how-to-get-a-front-end-developer-job/" title="How to get a Front End Developer Job">How to get a Front End Developer Job</a></li>
+	<li class="page_item page-item-1051"><a href="http://clubajax.org/meetings/html5-canvas-career-development-tips/" title="HTML5 Canvas / Career Development Tips">HTML5 Canvas / Career Development Tips</a></li>
+	<li class="page_item page-item-1609"><a href="http://clubajax.org/meetings/html5-hype-demo-and-ajax-qa/" title="HTML5 Hype Demo and Ajax Q&amp;A">HTML5 Hype Demo and Ajax Q&#038;A</a></li>
+	<li class="page_item page-item-1573"><a href="http://clubajax.org/meetings/html5-video-and-canvas-code-along/" title="HTML5 Video and Canvas Code Along">HTML5 Video and Canvas Code Along</a></li>
+	<li class="page_item page-item-846"><a href="http://clubajax.org/meetings/html5-video-explained/" title="HTML5 Video Explained">HTML5 Video Explained</a></li>
+	<li class="page_item page-item-1482"><a href="http://clubajax.org/meetings/implementing-a-rest-api/" title="Implementing a REST API">Implementing a REST API</a></li>
+	<li class="page_item page-item-491"><a href="http://clubajax.org/meetings/faster-websites-kill-kill/" title="Optimize Your Website to Load Faster!">Optimize Your Website to Load Faster!</a></li>
+	<li class="page_item page-item-295"><a href="http://clubajax.org/meetings/special-guest-speaker-molly-e-holzschlag/" title="Regular Expressions / History of HTML5">Regular Expressions / History of HTML5</a></li>
+	<li class="page_item page-item-1422"><a href="http://clubajax.org/meetings/simply-javascript/" title="Simply JavaScript">Simply JavaScript</a></li>
+	<li class="page_item page-item-36"><a href="http://clubajax.org/meetings/special-guest-speaker-dion-hinchcliffe/" title="Special Guest Speaker Dion Hinchcliffe">Special Guest Speaker Dion Hinchcliffe</a></li>
+	<li class="page_item page-item-1217"><a href="http://clubajax.org/meetings/special-guest-speaker-molly-holzschlag/" title="Special Guest Speaker Molly Holzschlag">Special Guest Speaker Molly Holzschlag</a></li>
+	<li class="page_item page-item-910"><a href="http://clubajax.org/meetings/ssjs-nosql-gae-and-appenginejs/" title="SSJS, NoSQL, GAE, and AppEngineJS">SSJS, NoSQL, GAE, and AppEngineJS</a></li>
+	<li class="page_item page-item-399"><a href="http://clubajax.org/meetings/the-history-of-html5/" title="The History of HTML5">The History of HTML5</a></li>
+	<li class="page_item page-item-1690"><a href="http://clubajax.org/meetings/webpage-design-basics-for-non-designers/" title="Webpage Design Basics for Non-Designers">Webpage Design Basics for Non-Designers</a></li>
+</ul>
+</li>
+<li class="page_item page-item-80"><a href="http://clubajax.org/presentations/" title="Presentations">Presentations</a>
+<ul class='children'>
+	<li class="page_item page-item-1541"><a href="http://clubajax.org/presentations/a-conversation-about-rest/" title="A Conversation About REST">A Conversation About REST</a></li>
+	<li class="page_item page-item-82"><a href="http://clubajax.org/presentations/ajax-basics-server-communication/" title="AJAX Basics Server Communication">AJAX Basics Server Communication</a></li>
+	<li class="page_item page-item-1102"><a href="http://clubajax.org/presentations/business-and-career-development-tips-for-ajax-programmers/" title="Business and Career Development Tips for AJAX Programmers">Business and Career Development Tips for AJAX Programmers</a></li>
+	<li class="page_item page-item-106"><a href="http://clubajax.org/presentations/crud-with-dojo/" title="CRUD with Dojo">CRUD with Dojo</a></li>
+	<li class="page_item page-item-282"><a href="http://clubajax.org/presentations/economics-2-0/" title="Economics 2.0">Economics 2.0</a></li>
+	<li class="page_item page-item-102"><a href="http://clubajax.org/presentations/exciting-javascript-part-i/" title="Exciting JavaScript Part I">Exciting JavaScript Part I</a></li>
+	<li class="page_item page-item-104"><a href="http://clubajax.org/presentations/exciting-javascript-part-ii/" title="Exciting JavaScript Part II">Exciting JavaScript Part II</a></li>
+	<li class="page_item page-item-87"><a href="http://clubajax.org/presentations/flash-and-the-dom/" title="Flash and the DOM">Flash and the DOM</a></li>
+	<li class="page_item page-item-850"><a href="http://clubajax.org/presentations/html5-video-explained/" title="HTML5 Video Explained">HTML5 Video Explained</a></li>
+	<li class="page_item page-item-516"><a href="http://clubajax.org/presentations/optimize-your-website-to-load-faster/" title="Optimize Your Website to Load Faster!">Optimize Your Website to Load Faster!</a></li>
+	<li class="page_item page-item-941"><a href="http://clubajax.org/presentations/ssjs-nosql-gae-and-appenginejs/" title="SSJS, NoSQL, GAE, and AppEngineJS">SSJS, NoSQL, GAE, and AppEngineJS</a></li>
+	<li class="page_item page-item-89"><a href="http://clubajax.org/presentations/thats-not-flash/" title="That&#8217;s Not Flash?">That&#8217;s Not Flash?</a></li>
+	<li class="page_item page-item-1441"><a href="http://clubajax.org/presentations/the-fight-over-html5/" title="The Fight Over HTML5">The Fight Over HTML5</a></li>
+	<li class="page_item page-item-84"><a href="http://clubajax.org/presentations/the-javascript-programming-primer/" title="The JavaScript Programming Primer">The JavaScript Programming Primer</a></li>
+	<li class="page_item page-item-1600"><a href="http://clubajax.org/presentations/why-you-need-a-front-end-developer/" title="Why You Need a Front End Developer">Why You Need a Front End Developer</a></li>
+</ul>
+</li>
+<li class="page_item page-item-918"><a href="http://clubajax.org/read-more/" title="Read More">Read More</a></li>
+<li class="page_item page-item-1230"><a href="http://clubajax.org/submit/" title="Submit an Article">Submit an Article</a></li>
+<li class="page_item page-item-19"><a href="http://clubajax.org/videos/" title="Videos">Videos</a>
+<ul class='children'>
+	<li class="page_item page-item-1545"><a href="http://clubajax.org/videos/a-conversation-about-rest/" title="A Conversation About REST">A Conversation About REST</a></li>
+	<li class="page_item page-item-128"><a href="http://clubajax.org/videos/adding-life-to-your-sites-using-jquery/" title="Adding Life to Your Sites Using jQuery">Adding Life to Your Sites Using jQuery</a></li>
+	<li class="page_item page-item-134"><a href="http://clubajax.org/videos/ajax-news-5/" title="AJAX News Aug 2009">AJAX News Aug 2009</a></li>
+	<li class="page_item page-item-49"><a href="http://clubajax.org/videos/ajax-news-feb-2010/" title="AJAX News Feb 2010">AJAX News Feb 2010</a></li>
+	<li class="page_item page-item-112"><a href="http://clubajax.org/videos/ajax-news/" title="AJAX News Jan 2010">AJAX News Jan 2010</a></li>
+	<li class="page_item page-item-1345"><a href="http://clubajax.org/videos/ajax-news-january-2011/" title="Ajax News January 2011">Ajax News January 2011</a></li>
+	<li class="page_item page-item-140"><a href="http://clubajax.org/videos/ajax-news-6/" title="AJAX News July 2009">AJAX News July 2009</a></li>
+	<li class="page_item page-item-854"><a href="http://clubajax.org/videos/ajax-news-july-2010/" title="AJAX News July 2010">AJAX News July 2010</a></li>
+	<li class="page_item page-item-523"><a href="http://clubajax.org/videos/ajax-news-june-2010/" title="AJAX News June 2010">AJAX News June 2010</a></li>
+	<li class="page_item page-item-1654"><a href="http://clubajax.org/videos/ajax-news-june-2011/" title="Ajax News June 2011">Ajax News June 2011</a></li>
+	<li class="page_item page-item-1585"><a href="http://clubajax.org/videos/ajax-news-may-2011/" title="Ajax News May 2011">Ajax News May 2011</a></li>
+	<li class="page_item page-item-120"><a href="http://clubajax.org/videos/ajax-news-2/" title="AJAX News Nov 2009">AJAX News Nov 2009</a></li>
+	<li class="page_item page-item-126"><a href="http://clubajax.org/videos/ajax-news-3/" title="AJAX News Oct 2009">AJAX News Oct 2009</a></li>
+	<li class="page_item page-item-1164"><a href="http://clubajax.org/videos/ajax-news-october-2010/" title="AJAX News October 2010">AJAX News October 2010</a></li>
+	<li class="page_item page-item-130"><a href="http://clubajax.org/videos/ajax-news-4/" title="AJAX News Sept 2009">AJAX News Sept 2009</a></li>
+	<li class="page_item page-item-136"><a href="http://clubajax.org/videos/browser-performance-testing/" title="Browser Performance Testing">Browser Performance Testing</a></li>
+	<li class="page_item page-item-1093"><a href="http://clubajax.org/videos/business-and-career-development-tips-for-ajax-programmers/" title="Business and Career Development Tips for AJAX Programmers">Business and Career Development Tips for AJAX Programmers</a></li>
+	<li class="page_item page-item-138"><a href="http://clubajax.org/videos/business-animations-like-a-rock-star/" title="Business Animations like a Rock Star">Business Animations like a Rock Star</a></li>
+	<li class="page_item page-item-116"><a href="http://clubajax.org/videos/css3-today/" title="CSS3 Today">CSS3 Today</a></li>
+	<li class="page_item page-item-1543"><a href="http://clubajax.org/videos/database-query-with-a-drag-drop-ui/" title="Database Query with a drag-drop UI">Database Query with a drag-drop UI</a></li>
+	<li class="page_item page-item-1323"><a href="http://clubajax.org/videos/dev-vs-dev-java-has-a-library-that-will-do-that/" title="Dev vs Dev! Java has a Library That Will do That">Dev vs Dev! Java has a Library That Will do That</a></li>
+	<li class="page_item page-item-1317"><a href="http://clubajax.org/videos/dev-vs-dev-javascript-is-a-toy/" title="Dev vs Dev! JavaScript is a Toy">Dev vs Dev! JavaScript is a Toy</a></li>
+	<li class="page_item page-item-122"><a href="http://clubajax.org/videos/diabolical-javascript-part-i/" title="Diabolical JavaScript &#8211; Part I">Diabolical JavaScript &#8211; Part I</a></li>
+	<li class="page_item page-item-124"><a href="http://clubajax.org/videos/diabolical-javascript-part-ii/" title="Diabolical JavaScript &#8211; Part II">Diabolical JavaScript &#8211; Part II</a></li>
+	<li class="page_item page-item-132"><a href="http://clubajax.org/videos/dojo-builds/" title="Dojo Builds">Dojo Builds</a></li>
+	<li class="page_item page-item-108"><a href="http://clubajax.org/videos/exciting-javascript-part-i-2/" title="Exciting JavaScript Part I">Exciting JavaScript Part I</a></li>
+	<li class="page_item page-item-54"><a href="http://clubajax.org/videos/exciting-javascript-part-ii/" title="Exciting JavaScript Part II">Exciting JavaScript Part II</a></li>
+	<li class="page_item page-item-1170"><a href="http://clubajax.org/videos/google-appengine-and-appenginejs/" title="Google AppEngine and AppEngineJS">Google AppEngine and AppEngineJS</a></li>
+	<li class="page_item page-item-1303"><a href="http://clubajax.org/videos/how-to-build-ajax-apps/" title="How to Build Ajax Apps">How to Build Ajax Apps</a></li>
+	<li class="page_item page-item-1096"><a href="http://clubajax.org/videos/html5-canvas-explained/" title="HTML5 Canvas Explained">HTML5 Canvas Explained</a></li>
+	<li class="page_item page-item-114"><a href="http://clubajax.org/videos/html5-today/" title="HTML5 Today">HTML5 Today</a></li>
+	<li class="page_item page-item-1587"><a href="http://clubajax.org/videos/html5-video-and-canvas-code-along/" title="HTML5 Video and Canvas Code Along">HTML5 Video and Canvas Code Along</a></li>
+	<li class="page_item page-item-871"><a href="http://clubajax.org/videos/html5-video-explained/" title="HTML5 Video Explained">HTML5 Video Explained</a></li>
+	<li class="page_item page-item-1648"><a href="http://clubajax.org/videos/hype-animation-tutorial/" title="Hype Animation Tutorial">Hype Animation Tutorial</a></li>
+	<li class="page_item page-item-459"><a href="http://clubajax.org/videos/javascript-regular-expressions-primer/" title="JavaScript Regular Expressions Primer">JavaScript Regular Expressions Primer</a></li>
+	<li class="page_item page-item-287"><a href="http://clubajax.org/videos/open-apis-ria-hinchcliffe/" title="Open APIs: How They Are Revolutionizing RIA and the Web">Open APIs: How They Are Revolutionizing RIA and the Web</a></li>
+	<li class="page_item page-item-513"><a href="http://clubajax.org/videos/optimize-your-website-to-load-faster/" title="Optimize Your Website to Load Faster!">Optimize Your Website to Load Faster!</a></li>
+	<li class="page_item page-item-1240"><a href="http://clubajax.org/videos/rapid-front-end-development-using-dojo-and-dijit/" title="Rapid Front End Development using Dojo and Dijit">Rapid Front End Development using Dojo and Dijit</a></li>
+	<li class="page_item page-item-118"><a href="http://clubajax.org/videos/sitepens-stocker/" title="SitePen&#8217;s Stocker">SitePen&#8217;s Stocker</a></li>
+	<li class="page_item page-item-931"><a href="http://clubajax.org/videos/ssjs-nosql-gae-and-appenginejs/" title="SSJS, NoSQL, GAE, and AppEngineJS">SSJS, NoSQL, GAE, and AppEngineJS</a></li>
+	<li class="page_item page-item-1451"><a href="http://clubajax.org/videos/the-fight-over-html5/" title="The Fight Over HTML5">The Fight Over HTML5</a></li>
+	<li class="page_item page-item-450"><a href="http://clubajax.org/videos/the-history-of-html5/" title="The History of HTML5">The History of HTML5</a></li>
+</ul>
+</li>
+</ul></li> -->
+
+					<li><h2>Archives</h2>
+						<ul>
+							<li><a href='http://clubajax.org/2011/06/' title='June 2011'>June 2011</a></li>
+	<li><a href='http://clubajax.org/2011/05/' title='May 2011'>May 2011</a></li>
+	<li><a href='http://clubajax.org/2011/04/' title='April 2011'>April 2011</a></li>
+	<li><a href='http://clubajax.org/2011/03/' title='March 2011'>March 2011</a></li>
+	<li><a href='http://clubajax.org/2011/02/' title='February 2011'>February 2011</a></li>
+	<li><a href='http://clubajax.org/2011/01/' title='January 2011'>January 2011</a></li>
+	<li><a href='http://clubajax.org/2010/12/' title='December 2010'>December 2010</a></li>
+	<li><a href='http://clubajax.org/2010/10/' title='October 2010'>October 2010</a></li>
+	<li><a href='http://clubajax.org/2010/09/' title='September 2010'>September 2010</a></li>
+	<li><a href='http://clubajax.org/2010/08/' title='August 2010'>August 2010</a></li>
+	<li><a href='http://clubajax.org/2010/07/' title='July 2010'>July 2010</a></li>
+	<li><a href='http://clubajax.org/2010/06/' title='June 2010'>June 2010</a></li>
+	<li><a href='http://clubajax.org/2010/05/' title='May 2010'>May 2010</a></li>
+	<li><a href='http://clubajax.org/2010/04/' title='April 2010'>April 2010</a></li>
+	<li><a href='http://clubajax.org/2010/03/' title='March 2010'>March 2010</a></li>
+						</ul>
+					</li>
+
+					<li class="categories"><h2>Categories</h2><ul>	<li class="cat-item cat-item-19"><a href="http://clubajax.org/category/aggregated/" title="View all posts filed under aggregated">aggregated</a> (5)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://clubajax.org/category/ajax/" title="View all posts filed under AJAX">AJAX</a> (46)
+</li>
+	<li class="cat-item cat-item-6"><a href="http://clubajax.org/category/announcement/" title="View all posts filed under Announcement">Announcement</a> (3)
+</li>
+	<li class="cat-item cat-item-15"><a href="http://clubajax.org/category/as3/" title="View all posts filed under AS3">AS3</a> (1)
+</li>
+	<li class="cat-item cat-item-39"><a href="http://clubajax.org/category/browsers/" title="View all posts filed under browsers">browsers</a> (19)
+</li>
+	<li class="cat-item cat-item-25"><a href="http://clubajax.org/category/business/" title="View all posts filed under business">business</a> (9)
+</li>
+	<li class="cat-item cat-item-118"><a href="http://clubajax.org/category/canvas/" title="View all posts filed under Canvas">Canvas</a> (1)
+</li>
+	<li class="cat-item cat-item-117"><a href="http://clubajax.org/category/career/" title="View all posts filed under Career">Career</a> (3)
+</li>
+	<li class="cat-item cat-item-43"><a href="http://clubajax.org/category/club-ajax-google-code/" title="View all posts filed under Club AJAX Google Code">Club AJAX Google Code</a> (4)
+</li>
+	<li class="cat-item cat-item-9"><a href="http://clubajax.org/category/css/" title="View all posts filed under CSS">CSS</a> (2)
+</li>
+	<li class="cat-item cat-item-10"><a href="http://clubajax.org/category/css3/" title="View all posts filed under CSS3">CSS3</a> (4)
+</li>
+	<li class="cat-item cat-item-96"><a href="http://clubajax.org/category/debug/" title="View all posts filed under Debug">Debug</a> (2)
+</li>
+	<li class="cat-item cat-item-139"><a href="http://clubajax.org/category/dev-vs-dev/" title="View all posts filed under Dev vs Dev">Dev vs Dev</a> (2)
+</li>
+	<li class="cat-item cat-item-32"><a href="http://clubajax.org/category/dojo/" title="View all posts filed under Dojo">Dojo</a> (3)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://clubajax.org/category/html5/" title="View all posts filed under HTML5">HTML5</a> (24)
+</li>
+	<li class="cat-item cat-item-102"><a href="http://clubajax.org/category/html5-video-player-development/" title="View all posts filed under HTML5 Video Player Development">HTML5 Video Player Development</a> (8)
+</li>
+	<li class="cat-item cat-item-126"><a href="http://clubajax.org/category/humor/" title="View all posts filed under humor">humor</a> (7)
+</li>
+	<li class="cat-item cat-item-8"><a href="http://clubajax.org/category/javascript/" title="View all posts filed under JavaScript">JavaScript</a> (16)
+</li>
+	<li class="cat-item cat-item-7"><a href="http://clubajax.org/category/meeting/" title="View all posts filed under Meeting">Meeting</a> (13)
+</li>
+	<li class="cat-item cat-item-40"><a href="http://clubajax.org/category/news/" title="View all posts filed under News">News</a> (11)
+</li>
+	<li class="cat-item cat-item-11"><a href="http://clubajax.org/category/original-content/" title="View all posts filed under original content">original content</a> (42)
+</li>
+	<li class="cat-item cat-item-36"><a href="http://clubajax.org/category/presentation/" title="View all posts filed under Presentation">Presentation</a> (6)
+</li>
+	<li class="cat-item cat-item-162"><a href="http://clubajax.org/category/rest/" title="View all posts filed under REST">REST</a> (1)
+</li>
+	<li class="cat-item cat-item-154"><a href="http://clubajax.org/category/uploader/" title="View all posts filed under Uploader">Uploader</a> (1)
+</li>
+	<li class="cat-item cat-item-105"><a href="http://clubajax.org/category/usability/" title="View all posts filed under usability">usability</a> (2)
+</li>
+	<li class="cat-item cat-item-35"><a href="http://clubajax.org/category/video/" title="View all posts filed under Video">Video</a> (22)
+</li>
+	<li class="cat-item cat-item-28"><a href="http://clubajax.org/category/web20/" title="View all posts filed under Web 2.0">Web 2.0</a> (3)
+</li>
+</ul></li>				</ul>
+				<ul>
+					
+									</ul>
+		</div>
+	<div class="sidebarnav" style="text-align:center;">
+		Mike on Stackoverflow
+		<a href="http://stackoverflow.com/users/101849/mwilcox">
+			<img src="http://stackoverflow.com/users/flair/101849.png" width="208" height="58" alt="Stack Overflow profile for mwilcox at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="Stack Overflow profile for mwilcox at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+		</a>
+	</div>
+	<div class="sidebarnav" style="height:90px;">
+		<a href="http://dribbble.com/shots/104556-HTML-4-01-TRANSITIONAL-LOGO">
+			<img style="display:block;float:left;"src="http://clubajax.org/wp-content/themes/clubajax/img/HTML4_logo.png" alt="HTML4-transitional-logo" title="HTML4 Transitional Logo">
+		</a>
+		<span style="font-size:10px;">Club AJAX proudly uses HTML4.1 Transitional! (We had the HTML5
+		logo on here, but didn't think that logo was as cool).</span>
+	</div>
+	<div class="sidebarnav">
+		<a href='https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number' title='JavaScript Number .toFixed'>
+			<img src='http://static.jsconf.us/promotejsh.gif' height='150' width='180' alt='JavaScript Number .toFixed'/>
+		</a>
+	</div>
+	</div>
+
+
+</div> <!--- end pageWrap -->
+	</div> <!--- end centerPage -->
+	<div class="clearfooter"></div>
+	</div>
+
+<div id="footer" role="contentinfo">
+<!-- If you'd like to support WordPress, having the "powered by" link somewhere on your blog is the best way; it's our only promotion or advertising. -->
+	<p>
+		<a href="/community/contact/">Contact Us</a><br/>
+		Copyright &copy; 2010 Club AJAX DFW User's Group. All rights reserved.
+	</p>
+	<p>
+		Club AJAX is proudly powered by
+		<a href="http://wordpress.org/">WordPress</a>
+		&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="http://clubajax.org/feed/">Entries (RSS)</a>
+		&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="http://clubajax.org/comments/feed/">Comments (RSS)</a>.
+		<!-- 20 queries. 0.989 seconds. -->
+	</p>
+</div>
+</div>
+
+
+<script src="http://clubajax.org/wp-content/themes/clubajax/js/grad.js"></script>
+
+<script type="text/javascript">
+if(!/preview=true/.test(document.location.href)){
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+}
+</script>
+<script type="text/javascript">
+var h = document.location.hash;
+window.realreferrer = "";
+if(h && /ref/.test(h)){
+	var realreferrer = h.split("ref=")[1].split("&")[0];
+	console.log("realreferrer:", realreferrer)
+}
+try{
+var pageTracker = _gat._getTracker("UA-6971352-1");
+if (window.realreferrer.length) {
+	pageTracker._setReferrerOverride(realreferrer);
+}
+pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+
+</body>
+</html>

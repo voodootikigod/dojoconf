@@ -39,8 +39,14 @@
             %li{:class=>(@tab == :about ? "active" : nil)}
               %a{:href => "/about.html"} About
       %hr
-      #content{:class=>(@make_index ? "index" : "")}
-        = yield
+      - if @flex
+        #layer1
+          #layer2
+            #layer3
+              = yield
+      - else
+        #content{:class=>(@make_index ? "index" : "")}
+          = yield
       %footer
         \&copy;
         %a{:href => "http://www.iterativedesigns.com"} Iterative Designs

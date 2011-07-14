@@ -1,4 +1,5 @@
 -@tab = :speakers
+-@flex = true
 %h1 Speakers
 
 
@@ -7,6 +8,195 @@
 
 %h4{:style=>"margin-bottom:0px; "} We Want To Hear From You
 %p{:style=>"margin-bottom: 2em; margin-top: 0px"} If you want to present at DojoConf on a topic, product, or idea that you have, there will be a Track B for lightning talks and hackfests. Speaking in Track B is completely free form, but you must be a registered attendee. Sign up will be done at the conference, so start preparing your topic to present today and get ready.
+
+
+
+
+
+.person.clearfix
+  %img{:alt => "Becky Gibson", :height => "150", :src => "images/gibson.jpg", :width => "150"}/
+  %h4
+    %a{:href=>"http://twitter.com/#!/becka11y"}
+      Becky Gibson
+    = " - Can Stephen Hawking use your Dojo App"
+  %p
+    Let's face it, not everyone has the same abilities.  Folks with vision or mobility impairments want to use Web applications, too!  The core widget set of Dojo is fully accessible to people who rely on the keyboard or assistive technologies like a screen reader to interact with the Web.  Your mission is to  learn how to make your Dojo apps accessible.  Your assigned agent will  decode the mysteries of ARIA  and will demo a fully accessible Dojo app!  Accept the challenge to make the Web inclusive for all!
+
+
+
+.person.clearfix
+  %img{:alt => "Luis Montes", :height => "150", :src => "images/montes.jpg", :width => "150"}/
+  %h4
+    %a{:href=>"http://twitter.com/#!/monteslu"}
+      Luis Montes
+    = " - HTML5 Game with dojo"
+  %p
+    HTML5 game development is the hawtness.  There might not be an official dojox.game package, but there are dojo libraries that can help. This will be a survey of the amazing utilities you can use to create HTML5 games.
+    
+
+
+
+.person.clearfix
+  %img{:alt => "Mike Wilcox", :height => "150", :src => "images/wilcox.jpg", :width => "150"}/
+  %h4
+    %a{:href=>"http://twitter.com/#!/clubajax"}
+      Mike Wilcox
+    = " - Dojo and HTML5"
+  %p
+    HTML5 is all the rage these days and Dojo can help keep you from falling behind. HTML5 Audio? Check. Video? Naturally! Canvas? Of course! This presentation will show you how you can get the most of your HTML5 apps and not have to worry about that "other browser" because Dojo is there to make it all work.
+
+
+
+.person.clearfix
+  %img{:alt => "James Thomas", :height => "150", :src => "images/thomas.jpg", :width => "150"}/
+  %h4
+    %a{:href=>"http://twitter.com/#!/thomasj"}
+      James Thomas
+    = " - Dojo Web Builder - Building Dojo in the Cloud"
+  %p
+    Dojo's build system has long been one of the the toolkit's greatest, but least understood, features. Using the build system properly dramatically improves the performance of your application! 
+  %p
+    However.... Fiddling about with shell scripts?  Needing to download the full source distribution?  Understanding long READMEs and cryptic profile files?  Manually categorising your application dependencies? 
+  %p
+    Pffft, not any more! Using the newly launched Dojo Web Builder you can ignore all of the above and just your web browser. 
+  %p
+    Using the Web Builder you can easily search through the database of all Dojo modules, selecting those required, including themes, configuring optimisers and much more. The Web Builder compiles your custom Dojo version remotely and just returns you the result. 
+  %p
+    More importantly, the auto-analysis feature lets you make the Web Builder do the hard work for you. Point it at your unoptimised Dojo application and it'll generate a custom build having analysed your application's dependencies. 
+  %p
+    Finally, the project's now open source as an official Dojo Foundation project. Running the tool locally allows you to expose your own application's module through the Web Builder or build older versions of Dojo. 
+  %p
+    This talk will walk through using the tool's features, demonstrating common use cases and talking about the future plans to make it even simpler to generate Dojo builds. 
+    
+
+
+
+
+.person.clearfix
+  %img{:alt => "Patrick Ruzand", :height => "150", :src => "images/ruzand.jpg", :width => "150"}/
+  %h4
+    %a{:href=>"http://twitter.com/#!/mobicellar"}
+      Patrick Ruzand
+    = " - Advanced Symbology with GFX"
+  %p
+    The purpose of this presentation is to illustrate how the dojo graphic API (gfx) can be leveraged to build advanced features needed by rich graphical application. In particular, we will demontrate how to build gfx extensions enabling advanced symbology : a layout mechanism to arrange shapes automatically and dynamically, a simple templating engine and gfx data binding. These extensions will be demonstrated in action taking as an example a diagramming web application.
+  %p
+    %b About the presenter: 
+    %br
+    Patrick Ruzand is a Software Engineer at IBM and a contributor to the Dojo Open source project, in particular for the 2D graphic API (dojox.gfx). He has 12 years of experience in advanced visualization components architecture and development targeting the Java and .NET desktop plateforms, and the Dojo/HTML5 and Microsoft Silverlight rich internet applications (RIA) plateforms. 
+
+  
+.person.clearfix
+  %img{:alt => "John Hann", :height => "150", :src => "images/hann.jpg", :width => "150"}/
+  %h4
+    %a{:href=>"http://twitter.com/#!/unscriptable"}
+      John Hann
+    = " - AMD module patterns"
+  %p
+    Much of the hype about AMD modules centers around performance and code size (and it's well-deserved).  But modules are as important to software architecture as dojo.declare()!
+  %p
+    In this session, we'll take a look at some classic, general-purpose patterns re-spun as AMD modules as well as a few advanced, implementation-specific patterns.
+  %p
+    Specifically, we'll cover:
+  %ul
+    %li Singletons, Decorators, Adapters
+    %li Inversion of Control / Dependency Injection
+    %li Mediators and inter-module coordination
+    %li Model-View-Controller patterns
+    %li Self-contained Widgets (js, css, and html)
+    %li Strategies for sharing code on the server
+
+    
+    
+    
+.person.clearfix
+  %img{:alt => "Ryan Corradini", :height => "150", :src => "images/corradini.jpg", :width => "150"}/
+  %h4
+    %a{:href=>"http://twitter.com/#!/buyog"}
+      Ryan Corradini
+    = " - DataGrid Bootcamp: Extreme Performance Hacks for Big Data"
+  %p
+    We love the <a href="http://dojotoolkit.org/reference-guide/dojox/grid/DataGrid.html">Dojox DataGrid</a>. It has built-in pagination, dynamic data binding, flexible resizing, and all kinds of <em>sexy</em> customization options. However, when you operate in the world of <a href="http://en.wikipedia.org/wiki/Big_data">Big Data</a>, it can fall short of its promise, ballooning your memory footprint, crushing your JavaScript engine, and otherwise causing your users to <strong>curse your name</strong>.</p>
+    
+    
+    
+    
+    
+    
+    
+.person.clearfix
+  %img{:alt => "Chris Barber", :height => "150", :src => "images/barber.jpg", :width => "150"}/
+  %h4
+    %a{:href=>"http://twitter.com/#!/cb1kenobi"}
+      Chris Barber
+    = " - The Art of Nano Widgets"
+  %p
+    Dojo's flagship widget system, dijit, is packed full of features and packed full of bytes that result in longer download, parse, and execution times. Sometimes you just need a lightweight widget that doesn't have all the extra stuff dijit provides.
+  %p
+    This talk describes the basic principals for designing non-dijit widgets that are small and fast containing only the functionality you need.  We'll take dijit widgets such as the AccordionContainer, then hack it down to a fraction of the functionality and size.
+
+
+
+
+
+
+
+
+
+.person.clearfix
+  %img{:alt => "Revin Guillen", :height => "150", :src => "images/guillen.jpg", :width => "150"}/
+  %h4
+    %a{:href=>"http://twitter.com/#!/revin"}
+      Revin Guillen
+    = " - Machiavelli 'n Dojo"
+  %p
+    "Machiavellian" is usually pejorative, a term laced with disdain and subtle contempt. However, to actually read Machiavelli is to study applied Realism in the context of meeting goals. As a community, we (Dojo) have certain goals; how can we reach them effectively? How can we best position ourselves in the toolkit/library ecosystem in order to reach our goals? How can we survive in a world more and more infatuated with tiny individual libraries, when the perception is that Dojo is heavy? Machiavelli provides us with keen insights into human nature—insights that still serve us well nearly 500 years later.
+
+
+
+
+
+
+.person.clearfix
+  %img{:alt => "Rawld Gill", :height => "150", :src => "images/gill.jpg", :width => "150"}/
+  %h4
+    %a{:href=>"http://twitter.com/#!/Rawld"}
+      Rawld Gill
+    = " - What's broke with Rails, Django, and every other web app framework...and how to fix them"
+      
+  %p
+    "[Rails] has become the framework of choice for implementation [...] of Web 2.0 applications" --Agile Web Development with Rails *2006*
+  %p
+    Really? Then why isn't everybody using Rails in 2011? Did something else replace it? Yes. The 100 other frameworks that were around before it, or came after it, and make the same claims. Isn't it obvious with so many competing frameworks that *none of them are solving the problem*?
+  %p
+    Our mental model of a web app is clearly broke. But there is hope: the Javascript community with recent advances in powerful client-side toolkits like Dojo have provided the necessary missing pieces to compose a new design for web apps that can provide an order of magnitude reduction in complexity--resulting in the ability to write better applications, faster, at less cost.
+  %p
+    In this talk, I'll:
+  %ul
+    %li Argue the current web app framework landscape is a disaster
+    %li Show the de facto mental model underlying these frameworks is ludicrous
+    %li Describe a new mental model, termed ""browser-compute"", including specific architectural prescriptions and proscriptions
+    %li Describe how the advanced core capabilities of a Javascript library like Dojo are required to make the new model work
+    %li Demonstrate a couple of concepts in code
+
+.person.clearfix
+  %img{:alt => "Mark Wubben", :height => "150", :src => "images/wubben.jpg", :width => "150"}/
+  %h4
+    %a{:href=>"http://twitter.com/#!/novemberborn"}
+      Mark Wubben
+    = " - Mustache? I’ll raise you an Eyebrow! — Reactive Templates and Widgets with Eyebrow templates"
+  %p
+    This talk comes out of work I’ve been doing at Equal Media. We’re building a platform and website for people to share opinions. Obviously with a lot of JavaScript to make it extra awesome.
+  %p
+    We use a new template system called Eyebrow for sharing templates between the client and server. Eyebrow is based on Mustache, but with template inheritance, filters, template variables, custom tags and if/else logic added, as well as being DOM-aware. Allow me to provide a short summary.
+  %p
+    A Node program parses and compiles Eyebrow templates. For the server-side we compile the templates into Node modules that’ll yield HTML strings. Because we parse the DOM at compile-time we can correctly escape variable output, following the recommendations by OWASP. The HTML will have funky character escaping, but hopefully will be secure against XSS attacks that target the browser’s HTML parser.
+  %p
+    For the client-side we compile the templates into small JSON definitions that run within the browser runtime. Here we can bind data values directly to DOM text nodes or attributes. By relying on the `dojo/Stateful` interface, data model changes are automatically reflected in the DOM. Dojo widgets can also be managed through Eyebrow by parsing the DOM for `data-dojo-` properties as we’re compiling the template. This removes the need for running `dojo/parser` in the browser. Widgets can be created or destroyed based on the template context, attach points are automatically maintained and events are automatically connected.
+  %p 
+    This leads to a new and interesting approach for writing Dojo widgets. They can become much more like controllers: handling DOM events, implementing application logic and updating a model.  In this talk I’d like to show what Eyebrow looks like under the covers, how it’s used to build our site and discuss how it changes web application development. 
+
+
 
 .person.clearfix
   %img{:alt => "Laurent Hasson", :height => "150", :src => "images/hasson.jpg", :width => "150"}/
