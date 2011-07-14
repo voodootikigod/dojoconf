@@ -67,24 +67,45 @@ navigation li.active a, navigation li.active a:hover {
 }
 
 /* line 52 */
+#layer1 {
+  width: 1058px;
+  margin: 0px auto;
+  background: url(/images/flex.jpg) top center repeat-y;
+}
+
+/* line 57 */
+#layer2 {
+  width: 1058px;
+  margin: 0px;
+  background: url(/images/flexbgtop.jpg) top center no-repeat;
+}
+
+/* line 62 */
+#layer3 {
+  padding: 100px 55px 35px 75px;
+  margin: 0px;
+  background: url(/images/flexbgbottom.jpg) bottom center no-repeat;
+}
+
+/* line 67 */
 footer {
   font-size: 14px;
   font-family: Courier, sans-serif;
   text-align: center;
   margin: 20px auto;
 }
-/* line 57 */
+/* line 72 */
 footer a {
   text-decoration: none;
   color: black;
 }
 
-/* line 62 */
+/* line 77 */
 header h2, header h3, header #enroll {
   display: none;
 }
 
-/* line 64 */
+/* line 79 */
 header h1 {
   margin: 0px;
   padding: 0px;
@@ -92,12 +113,12 @@ header h1 {
   height: 121px;
   background: url(/images/logo.png) top center no-repeat;
 }
-/* line 70 */
+/* line 85 */
 header h1 span {
   display: none;
 }
 
-/* line 73 */
+/* line 88 */
 hr {
   display: block;
   background: url(/images/rip.png) top left repeat-x;
@@ -108,35 +129,35 @@ hr {
   margin: 0px;
 }
 
-/* line 81 */
+/* line 96 */
 header {
   background: #575757 url(/images/headerbg.png) top left repeat;
 }
 
-/* line 85 */
+/* line 100 */
 .person img {
   float: left;
 }
 
-/* line 88 */
-.person h4, .person p {
+/* line 103 */
+.person h4, .person p, .person ul {
   margin-left: 175px;
 }
 
-/* line 93 */
+/* line 108 */
 #left {
   float: left;
   width: 610px;
 }
 
-/* line 96 */
+/* line 111 */
 #right {
   margin-left: 645px;
   width: 290px;
   padding-top: 100px;
 }
 
-/* line 101 */
+/* line 116 */
 #sponsorinterest {
   text-align: center;
   margin-top: 20px;
