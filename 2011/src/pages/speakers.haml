@@ -140,7 +140,7 @@
   %h4
     %a{:href=>"http://twitter.com/#!/cb1kenobi"}
       Chris Barber
-    = " - The Art of Nano Widgets"
+    = " - The Art of Developing Nano Widgets"
   %p
     Dojo's flagship widget system, dijit, is packed full of features and packed full of bytes that result in longer download, parse, and execution times. Sometimes you just need a lightweight widget that doesn't have all the extra stuff dijit provides.
   %p
@@ -195,19 +195,20 @@
   %h4
     %a{:href=>"http://twitter.com/#!/novemberborn"}
       Mark Wubben
-    = " - Mustache? I’ll raise you an Eyebrow! — Reactive Templates and Widgets with Eyebrow templates"
+    = " - Mustache? I'll raise you an Eyebrow! — Reactive Templates and Widgets with Eyebrow templates"
   %p
-    This talk comes out of work I’ve been doing at Equal Media. We’re building a platform and website for people to share opinions. Obviously with a lot of JavaScript to make it extra awesome.
+    At <a href="http://state.it">State</a> we're building a platform and website for people to share opinions. We've developed a new template system named Eyebrow, based on Mustache and DTL. It has template inheritance, filters, template variables custom tags and if/else logic. It's also DOM-aware. In Node, we parse the template syntax and run the markup through JSDOM. This gives us an AST for both template tags and the DOM nodes. We can use this to compile a Node module for server-side rendering and a JSON definition for the browser runtime. In the browser, this gives us reactive templates where model changes are automatically reflected in the DOM, down to the text node level.
   %p
-    We use a new template system called Eyebrow for sharing templates between the client and server. Eyebrow is based on Mustache, but with template inheritance, filters, template variables, custom tags and if/else logic added, as well as being DOM-aware. Allow me to provide a short summary.
+    Eyebrow also manages our Dojo widgets, taking care of attaching events and maintaining attach points. This leads to a new and interesting approach for writing Dojo widgets. They can become much more like controllers: handling DOM events, implementing application logic and updating a model. The view will automatically reflect the changes. Here's an example of a widget that automatically renders what you type into an `&lt;input>` field:
   %p
-    A Node program parses and compiles Eyebrow templates. For the server-side we compile the templates into Node modules that’ll yield HTML strings. Because we parse the DOM at compile-time we can correctly escape variable output, following the recommendations by OWASP. The HTML will have funky character escaping, but hopefully will be secure against XSS attacks that target the browser’s HTML parser.
+    Example.html.eyebrow:
+  ='<script src="https://gist.github.com/1085129.js?file=gistfile1.html"></script>'
   %p
-    For the client-side we compile the templates into small JSON definitions that run within the browser runtime. Here we can bind data values directly to DOM text nodes or attributes. By relying on the `dojo/Stateful` interface, data model changes are automatically reflected in the DOM. Dojo widgets can also be managed through Eyebrow by parsing the DOM for `data-dojo-` properties as we’re compiling the template. This removes the need for running `dojo/parser` in the browser. Widgets can be created or destroyed based on the template context, attach points are automatically maintained and events are automatically connected.
-  %p 
-    This leads to a new and interesting approach for writing Dojo widgets. They can become much more like controllers: handling DOM events, implementing application logic and updating a model.  In this talk I’d like to show what Eyebrow looks like under the covers, how it’s used to build our site and discuss how it changes web application development. 
-
-
+    Example.js
+  ='<script src="https://gist.github.com/1085130.js?file=gistfile1.js"></script>'
+  %p
+    In this talk I’ll show what Eyebrow looks like under the covers, how it’s used to build our site and discuss how it changes web application development.
+  
 
 .person.clearfix#hasson
   %img{:alt => "Laurent Hasson", :height => "150", :src => "images/hasson.jpg", :width => "150"}/

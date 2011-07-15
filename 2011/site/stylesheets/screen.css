@@ -140,7 +140,7 @@ header {
 }
 
 /* line 103 */
-.person h4, .person p, .person ul {
+.person h4, .person p, .person ul, div.gist {
   margin-left: 175px;
 }
 
