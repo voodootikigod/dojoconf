@@ -144,26 +144,42 @@ header {
   margin-left: 175px;
 }
 
-/* line 108 */
+/* line 107 */
+.sponsor {
+  margin-bottom: 40px;
+}
+
+/* line 109 */
+#right .sponsor {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+/* line 113 */
 #left {
   float: left;
   width: 610px;
 }
 
-/* line 111 */
+/* line 116 */
 #right {
   margin-left: 645px;
   width: 290px;
-  padding-top: 100px;
+  padding-top: 120px;
 }
 
-/* line 116 */
+/* line 121 */
 #sponsorinterest {
   text-align: center;
   margin-top: 20px;
 }
 
-/* line 120 */
+/* line 125 */
 .person {
   margin-bottom: 12px;
+}
+
+/* line 128 */
+.logo {
+  text-align: center;
 }
