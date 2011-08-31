@@ -183,3 +183,29 @@ header {
 .logo {
   text-align: center;
 }
+
+/* line 132 */
+table {
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+}
+
+/* line 135 */
+td {
+  padding: 8px;
+  font-size: 12px;
+  font-family: arial;
+  border-left: 1px solid #333333;
+  border-top: 1px solid #333333;
+  line-height: 1.4;
+}
+
+/* line 142 */
+th {
+  font-family: arial;
+  font-weight: bold;
+  padding: 4px;
+  font-size: 12px;
+  color: white;
+  background: black;
+}

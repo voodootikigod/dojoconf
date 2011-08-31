@@ -27,11 +27,10 @@
           %ul
             %li{:class=>(@tab == :home ? "active" : nil)}
               %a{:href => "/"} Home
-            
+            %li{:class=>(@tab == :schedule ? "active" : nil)}
+              %a{:href => "/schedule.html"} Schedule
             %li
               %a{:href => "http://dojoconf2011.eventbrite.com"} Register
-            %li{:class=>(@tab == :venue ? "active" : nil)}
-              %a{:href => "/venue.html"} Venue
             %li{:class=>(@tab == :speakers ? "active" : nil)}
               %a{:href => "/speakers.html"} Speakers
             %li{:class=>(@tab == :sponsors ? "active" : nil)}

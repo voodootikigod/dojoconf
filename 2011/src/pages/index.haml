@@ -1,6 +1,14 @@
 - @make_index = true
 - @tab = :home
 #left
+  %h1 Schedule
+  %p Our schedule is available in mobile version thanks to the awesome Guidebook application, it should be available for your mobile platform of choice. To obtain the guide, click the button below. We have provided the <a href="/schedule.html">schedule</a> for you to view from non-mobile interfaces. 
+  %center= '<iframe src="http://gears.guidebookapp.com/static/assets/badge.html" frameborder="0" width="334" height="94" style="width:334px;height:94px;overflow:hidden;" scrolling="no"></iframe>'
+
+  %p As with a JSConf event, there will be a loosely curated Track B. When you get to DojoConf, there will be a sign up sheet at registration for you to pick a slot if you want to speak. Each slot is for 30 minutes, so they line up with the Track A slots perfectly, anyone can speak in Track B, it is the People's Track!! Be sure to check the Track B schedule through out the day as it will be just as amazing as Track A, it always is. 
+  %p Also for those of you wishing to "break-away" and cut some code with the speakers, we have a fully catered Hacker's Dojo ready for you care of the LifeIMAGE team. The Hacker's Dojo is all the goodness of a hallconf, but in a semi-organized (and a lot more comfortable) fashion. Be sure to indulge in some coding goodness at DojoConf, its half the fun of the event to be able to say "I hacked with Pete Higgins".
+  %p We are very much looking forward to seeing you at DojoConf!
+  %p="&nbsp;"
   %h1 Speakers Announced
   %center
     %a{:href=>"/speakers.html"}
@@ -29,4 +37,6 @@
   .sponsor
     %a{:href => "sponsors.html#sitepen"}
       %img{:alt => "sitepen", :src => "images/sitepen.png"}
-  #sponsorinterest Interested in becoming a sponsor?<br/><a href="http://dojoconf.s3.amazonaws.com/DojoConf2011SponsorPkg.pdf">Please review our prospectus!</a>
+  .sponsor
+    %a{:href => "sponsors.html#lifeimage"}
+      %img{:alt => "LifeIMAGE", :src => "images/lifeimage.png"}
